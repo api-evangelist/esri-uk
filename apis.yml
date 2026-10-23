@@ -1,23 +1,76 @@
 aid: esri-uk
+
 name: Esri UK
-description: 'Esri UK is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.esriuk.com/en-gb/about/events/sc/2026/presentations
+
+description: 'Esri UK provides GIS software and spatial data analytics technology, helping organisations across the UK make data‑driven decisions. Their solutions power business intelligence, government operations and a wide range of mapping applications, delivering powerful location‑based insights and visualisations.'
+
 url: https://raw.githubusercontent.com/api-evangelist/esri-uk/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
-- Company
-apis: []
+- GIS
+- Mapping
+- Spatial-Analytics
+- Enterprise-Software
+- UK
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/esri-uk-well-known.yml
+- type: Compliance
+  url: https://trust.esriuk.com/
+- type: Hosts
+  url: hosts/esri-uk-hosts.yml
+- type: Vendors
+  url: vendors/esri-uk-vendors.yml
+- type: Newsroom
+  url: https://resource.esriuk.com/news/
+- type: Blog
+  url: https://resource.esriuk.com/blog/
+- type: Documentation
+  url: https://resource.esriuk.com/
+- type: GitHubOrganization
+  url: https://github.com/EsriUK
+- type: TrustCenter
+  url: security/esri-uk-trust-center.yml
+- type: DomainSecurity
+  url: security/esri-uk-domain-security.yml
 - type: Website
   url: https://www.esriuk.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal at https://developers.arcgis.com returns HTML pages rendered by JavaScript, with no machine‑readable OpenAPI spec discovered.
+  evidence:
+    - url: https://developers.arcgis.com
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

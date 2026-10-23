@@ -1,0 +1,18 @@
+generated: '2026-10-23'
+method: probed
+source: https://trust.esriuk.com/
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://trust.esriuk.com/
+        http_status: 200
+        fetched: "true"
+        quote: "Our commitment to information security and data privacy is embedded in every part of our business. Use this Trust Centre to learn about our security posture and request access to the security documentation."
+        note: Indicates that data subjects can request access to security documentation.
+  compliance_certifications:
+    evidence:
+      - source: https://trust.esriuk.com/
+        http_status: 200
+        fetched: "true"
+        quote: "We have established an Integrated Management System (IMS) that complies with ISO/IEC 27001:2022 (as well as BS EN ISO 9001:2015, BS EN ISO 14001:2015) standards."
+        note: Shows compliance with ISO/IEC 27001:2022, indicating a formal security management framework.
